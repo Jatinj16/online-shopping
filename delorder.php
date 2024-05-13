@@ -1,0 +1,12 @@
+<?php
+include('conn.php');
+session_start();
+if(isset($_SESSION['user']))
+  { 
+     $a=$_SESSION['user'];
+   if($a)
+     {
+		$sql=mysqli_query($conn,"delete"); 
+	 }
+  }
+?>
